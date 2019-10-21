@@ -37,13 +37,7 @@ class App extends Component {
   }
 
   getRecipes() {
-    fetch(`${BASE_URL}${API}/rec`, {
-      credentials: 'include',
-      // mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }).then(response => {
+    fetch(`${BASE_URL}${API}/rec`).then(response => {
       console.log(response);
       
       return response.json()  
@@ -55,7 +49,7 @@ class App extends Component {
 
 
 const RecipeCard = ({title, field_images, body}) => {
-  let img = field_images.split(',').slice(-1)[0];
+  let img = field_images.split(',').slice(-1)[0].trim();
   return(
     <div className="recipe-card">
       <div className="recipe-img">
