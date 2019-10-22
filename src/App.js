@@ -25,11 +25,16 @@ class App extends Component {
       results ?
       <div>
         {
-          results.map(recipe => 
-            <RecipeCard
-              title={recipe['title']}
-              field_images={recipe['field_images']}
-              body={recipe['body']}  ></RecipeCard>
+          results.map(recipe =>
+            <div key={recipe.view_node.split('/').slice(-1)[0]}>
+              <RecipeCard
+                title={recipe['title']}
+                field_images={recipe['field_images']}
+                body={recipe['body']}  
+                view_node={recipe['view_node']}
+                ingredients={recipe['field_ingredients']}
+                ></RecipeCard> 
+            </div>
         )}
       </div>
         : <h1>Loading</h1>
@@ -48,14 +53,14 @@ class App extends Component {
 }
 
 
-const RecipeCard = ({title, field_images, body}) => {
+const RecipeCard = ({title, field_images, body, view_node, ingredients}) => {
   let img = field_images.split(',').slice(-1)[0].trim();
   return(
     <div className="recipe-card">
       <div className="recipe-img">
         <img src={`${BASE_URL}${img}`}></img>
       </div>
-      <div>
+      <div className="recipe-title">
         { title }
       </div>
     </div>
