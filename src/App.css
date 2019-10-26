@@ -22,8 +22,23 @@
 }
 
 .recipe-card-grid {
-  width: 600px;
+  width: 1000px;
   max-width: 95%;
   margin: auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.App-recipe-card {
+  display: flex;
+  flex: 0 0 33.33333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
 }

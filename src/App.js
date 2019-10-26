@@ -28,13 +28,14 @@ class App extends Component {
       <div className="recipe-card-grid">
         {
           results.map(recipe =>
-            <div key={recipe.view_node.split('/').slice(-1)[0]}>
+            <div key={recipe.view_node.split('/').slice(-1)[0]} className="App-recipe-card">
               <RecipeCard
                 title={recipe['title']}
                 field_images={recipe['field_images']}
                 body={recipe['body']}  
                 view_node={recipe['view_node']}
                 ingredients={recipe['field_ingredients']}
+                summary={recipe['field_summary']}
                 ></RecipeCard> 
             </div>
         )}
