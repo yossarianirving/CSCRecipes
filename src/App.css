@@ -20,3 +20,10 @@
 .App-link {
   color: #09d3ac;
 }
+
+.recipe-card-grid {
+  width: 600px;
+  max-width: 95%;
+  margin: auto;
+  text-align: center;
+}
