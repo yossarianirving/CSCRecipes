@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeCard has a valid snapshot 1`] = `
+<div
+  className="recipe-card-grid"
+>
+  <div
+    className="App-recipe-card"
+  >
+    <div
+      className="recipe-card"
+    >
+      <img
+        className="recipe-card-img"
+        src="http://gtest.dev.wwbtc.com/sites/default/files/styles/medium/public/2019-10/vigo%20the%20cat%20wallpaper.jpg?itok=C7xZGmBE"
+      />
+      <div
+        className="recipe-card-title"
+      >
+        Tomato and olive focaccia (TM)
+      </div>
+      <div
+        className="recipe-card-summary"
+      >
+        baked flatbread type dish that is easy for even terrible cooks to make (now with 15% less housefire)&lt;br /&gt;
+
+      </div>
+    </div>
+  </div>
+  <div
+    className="App-recipe-card"
+  >
+    <div
+      className="recipe-card"
+    >
+      <img
+        className="recipe-card-img"
+        src="http://gtest.dev.wwbtc.com/sites/default/files/styles/medium/public/2019-10/img_9212-683x1024.jpg?itok=yDqHlTFF"
+      />
+      <div
+        className="recipe-card-title"
+      >
+        Majorcan vegetable bake
+      </div>
+      <div
+        className="recipe-card-summary"
+      >
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -5,16 +5,18 @@ import {
   API
 } from './constants'
 
-import { RecipeCard } from './RecipeCard'
-
+import { RecipeGrid } from './RecipeGrid'
+import {Header } from './Header'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      results: null
+      results: null,
+      page: "recipe-list"
     };
     this.getRecipes = this.getRecipes.bind(this)
+    this.getBody = this.getBody.bind(this)
   }
 
   componentDidMount() {
@@ -22,40 +24,35 @@ class App extends Component {
   }
 
   render() {
-    const { results } = this.state;
-    return(
-      results ?
-      <div className="recipe-card-grid">
-        {
-          results.map(recipe =>
-            <div key={recipe.view_node.split('/').slice(-1)[0]} className="App-recipe-card">
-              <RecipeCard
-                title={recipe['title']}
-                field_images={recipe['field_images']}
-                body={recipe['body']}  
-                view_node={recipe['view_node']}
-                ingredients={recipe['field_ingredients']}
-                summary={recipe['field_summary']}
-                ></RecipeCard> 
-            </div>
-        )}
-      </div>
-        : <h1>Loading</h1>
+    return (
+      <>
+      <Header></Header>
+      { this.getBody() }
+      </>
     )
+    
+
   }
 
   getRecipes() {
     fetch(`${BASE_URL}${API}/rec`).then(response => {
-      console.log(response);
-      
       return response.json()  
     }).then(results => {
       this.setState({ results })
     })
   }
+
+  onRecipeClick(event) {
+
+  }
+
+  getBody() {
+    const { results, page } = this.state;
+    switch(page) {
+      case "recipe-list":
+        return (<div><RecipeGrid results={results}></RecipeGrid> </div> )
+    }
+  }
 }
-
-
-
 
 export default App;

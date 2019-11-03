@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecipeCard has a valid snapshot 1`] = `
+<div
+  className="recipe-card"
+>
+  <img
+    className="recipe-card-img"
+    src="http://gtest.dev.wwbtc.com/images/test/blah.jpeg"
+  />
+  <div
+    className="recipe-card-title"
+  >
+    Beef stew
+  </div>
+  <div
+    className="recipe-card-summary"
+  >
+    Easy to make beef stew
+  </div>
+</div>
+`;
