@@ -14,11 +14,12 @@ exports[`RecipeCard has a valid snapshot 1`] = `
         className="recipe-card-img"
         src="http://gtest.dev.wwbtc.com/sites/default/files/styles/medium/public/2019-10/vigo%20the%20cat%20wallpaper.jpg?itok=C7xZGmBE"
       />
-      <div
+      <button
         className="recipe-card-title"
+        onClick={[Function]}
       >
         Tomato and olive focaccia (TM)
-      </div>
+      </button>
       <div
         className="recipe-card-summary"
       >
@@ -37,11 +38,12 @@ exports[`RecipeCard has a valid snapshot 1`] = `
         className="recipe-card-img"
         src="http://gtest.dev.wwbtc.com/sites/default/files/styles/medium/public/2019-10/img_9212-683x1024.jpg?itok=yDqHlTFF"
       />
-      <div
+      <button
         className="recipe-card-title"
+        onClick={[Function]}
       >
         Majorcan vegetable bake
-      </div>
+      </button>
       <div
         className="recipe-card-summary"
       >

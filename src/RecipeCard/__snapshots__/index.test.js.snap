@@ -8,11 +8,12 @@ exports[`RecipeCard has a valid snapshot 1`] = `
     className="recipe-card-img"
     src="http://gtest.dev.wwbtc.com/images/test/blah.jpeg"
   />
-  <div
+  <button
     className="recipe-card-title"
+    onClick={[Function]}
   >
     Beef stew
-  </div>
+  </button>
   <div
     className="recipe-card-summary"
   >

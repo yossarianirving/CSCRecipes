@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './index.css'
 import { RecipeCard } from '../RecipeCard'
 
-export const RecipeGrid = ({results}) => {
+export const RecipeGrid = ({results, openRecipe}) => {
   return(
     results ?
     <div className="recipe-card-grid">
@@ -13,6 +13,8 @@ export const RecipeGrid = ({results}) => {
               title={recipe['title']}
               field_images={recipe['field_images']}
               field_summary={recipe['field_summary']}
+              openRecipe={openRecipe}
+              index={index}
               ></RecipeCard>  
           </div>
       )}

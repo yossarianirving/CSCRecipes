@@ -7,6 +7,8 @@ import {
 
 import { RecipeGrid } from './RecipeGrid'
 import {Header } from './Header'
+import { HomePage } from './HomePage';
+import { SingleRecipe } from './SingleRecipe';
 
 class App extends Component {
   constructor(props) {
@@ -17,6 +19,7 @@ class App extends Component {
     };
     this.getRecipes = this.getRecipes.bind(this)
     this.getBody = this.getBody.bind(this)
+    this.openRecipe = this.openRecipe.bind(this)
   }
 
   componentDidMount() {
@@ -47,12 +50,21 @@ class App extends Component {
   }
 
   getBody() {
-    const { results, page } = this.state;
+    const { results, page, recipe_num } = this.state;    
     switch(page) {
       case "recipe-list":
-        return (<div><RecipeGrid results={results}/></div> )
+        return (<><RecipeGrid results={results} openRecipe={this.openRecipe}/></> );
+      case "home-page":
+        return (<><HomePage/></>)
+      case "single-recipe":
+        return (<><SingleRecipe results={results} initialIndex={recipe_num}/></>)
     }
   }
+  openRecipe(recipe_num) {
+    console.log(recipe_num);   
+    this.setState({page: "single-recipe", recipe_num})
+  }
+
 }
 
 export default App;
