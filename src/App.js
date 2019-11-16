@@ -50,7 +50,7 @@ class App extends Component {
     const { results, page } = this.state;
     switch(page) {
       case "recipe-list":
-        return (<div><RecipeGrid results={results}></RecipeGrid> </div> )
+        return (<div><RecipeGrid results={results}/></div> )
     }
   }
 }
