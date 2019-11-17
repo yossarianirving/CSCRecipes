@@ -27,8 +27,8 @@ export class SingleRecipe extends Component {
         )}
         </ul>
         <p dangerouslySetInnerHTML={{__html: body}}></p>
-        <button onClick={this.previousRecipe}> Previous Recipe</button>
-        <button onClick={this.nextRecipe}>Next Recipe</button>
+        <button id="prev-recipe" onClick={this.previousRecipe}> Previous Recipe</button>
+        <button id="next-recipe" onClick={this.nextRecipe}>Next Recipe</button>
       </>
     )
   }
