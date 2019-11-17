@@ -1,6 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HomePage has a valid snapshot 1`] = `
+exports[`SingleRecipe has a valid snapshot 1`] = `
+Array [
+  <h2>
+    Tomato and olive focaccia (TM)
+  </h2>,
+  <h3>
+    Ingredients
+  </h3>,
+  <ul>
+    <li>
+      ingredient 1
+    </li>
+    <li>
+       ingredient 2
+    </li>
+    <li>
+       ingredient 3
+    </li>
+    <li>
+       ingredient 4
+    </li>
+  </ul>,
+  <p
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "
+<p> PREPARATION TIME :&nbsp;20<br>COOKING TIME :&nbsp;45<br> SERVES :&nbsp;TODO &lt;<br>DIFFICULTY: EASY<br></p>
+
+
+
+<p> Add the water and the flour to the bowl 30 sec / Speed 5.,Leave for 1 hour to autolyse.,Add the yeast and salt to separate sides of the bowl 10 seconds / Speed 7.,Then 2 minutes / Knead.,Remove the dough from the bowl and form a ball.,Place the dough into a bowl and pour olive oil over the dough to make sure it is well coated.,Cover and leave to rest overnight in the fridge.,The next day, remove from the fridge and bring to room temperature.,Pour enough olive oil to cover the base of a roasting pan about 20 x 30cm.,Put the dough in the centre of the pan and let it rest, covered, for 30 minutes.,Turn the dough in the oil (it must be nice and oily) and spread it with the tip of your fingers from the centre.,Sprinkle with tomatoes pieces or cherry tomatoes, cut in half and push well into the dough with the olives.,Sprinkle with oregano, salt and more oil.,Allow to rest until doubled in size.,Cook on the bottom rack of a preheated oven for 25 minutes at 200° C (400° F - gas 6), [fan oven 180° C],Allow to cool on a wire rack. </p>
+",
+      }
+    }
+  />,
+  <button
+    onClick={[Function]}
+  >
+     Previous Recipe
+  </button>,
+  <button
+    onClick={[Function]}
+  >
+    Next Recipe
+  </button>,
+]
+`;
+
+exports[`SingleRecipe has a valid snapshot 1`] = `
 Array [
   <h2>
     Tomato and olive focaccia (TM)

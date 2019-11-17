@@ -20,6 +20,7 @@ class App extends Component {
     this.getRecipes = this.getRecipes.bind(this)
     this.getBody = this.getBody.bind(this)
     this.openRecipe = this.openRecipe.bind(this)
+    this.openPage = this.openPage.bind(this)
   }
 
   componentDidMount() {
@@ -29,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <>
-      <Header></Header>
+      <Header openPage={this.openPage}></Header>
       { this.getBody() }
       </>
     )
@@ -53,16 +54,24 @@ class App extends Component {
     const { results, page, recipe_num } = this.state;    
     switch(page) {
       case "recipe-list":
+        window.location.hash = "recipes"
         return (<><RecipeGrid results={results} openRecipe={this.openRecipe}/></> );
       case "home-page":
+        window.location.hash = ""
         return (<><HomePage/></>)
       case "single-recipe":
+        window.location.hash = `recipes/${recipe_num}`
         return (<><SingleRecipe results={results} initialIndex={recipe_num}/></>)
     }
   }
   openRecipe(recipe_num) {
     console.log(recipe_num);   
     this.setState({page: "single-recipe", recipe_num})
+  }
+  // opens a page (all recipes or home page)
+  // opening a single recipe is separate (could become one in the future)
+  openPage(page) {
+    this.setState({page})
   }
 
 }

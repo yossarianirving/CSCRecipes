@@ -41,6 +41,7 @@ export class SingleRecipe extends Component {
     else {
       index++
     }
+    window.location.hash = "recipes/" + index
     this.setState({
       index
     })
@@ -56,6 +57,7 @@ export class SingleRecipe extends Component {
     else {
       index--
     }
+    window.location.hash = "recipes/" + index
     this.setState({
       index
     })
