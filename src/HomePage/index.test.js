@@ -2,14 +2,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
+import { mount, shallow } from 'enzyme';
 import { HomePage } from '.';
 
 describe('HomePage', () => {
 
   it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<HomePage />, div)
-    ReactDOM.unmountComponentAtNode(div);
+    const wrapper = shallow(<HomePage />)
+    expect(wrapper).toBeDefined()
   })
 
   test('has a valid snapshot', () => {

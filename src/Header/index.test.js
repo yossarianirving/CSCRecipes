@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { Header } from '.';
+import { mount, shallow } from 'enzyme';
 
 describe('Header', () => {
   const openPage = () => {
 
   }
   it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Header openPage={openPage}/>, div)
-    ReactDOM.unmountComponentAtNode(div);
+    const wrapper = shallow(<Header openPage={openPage}/>)
+    expect(wrapper).toBeDefined()
   })
 
   test('has a valid snapshot', () => {
