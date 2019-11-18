@@ -14,6 +14,22 @@ describe('App', () => {
   it('renders without crashing', () => {
     fetch.mockResponseOnce(JSON.stringify(results))
     const wrapper = shallow(<App />);
-    expect(1).toBeDefined();
+    expect(wrapper).toBeDefined();
   });
+
+  it('navigates to home', () => {
+    fetch.mockResponseOnce(JSON.stringify(results))
+    const wrapper = shallow(<App />);
+    const instance = wrapper.instance()
+    instance.openPage('home-page')
+    expect(wrapper.state('page')).toEqual('home-page')
+  })
+
+  it('navigates to recipe', () => {
+    fetch.mockResponseOnce(JSON.stringify(results))
+    const wrapper = shallow(<App />);
+    const instance = wrapper.instance()
+    instance.openRecipe(0)
+    expect(wrapper.state('page')).toEqual('single-recipe')
+  })
 })

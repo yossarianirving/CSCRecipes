@@ -39,7 +39,7 @@ Array [
     id="prev-recipe"
     onClick={[Function]}
   >
-     Previous Recipe
+    Previous Recipe
   </button>,
   <button
     id="next-recipe"

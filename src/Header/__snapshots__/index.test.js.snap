@@ -8,12 +8,14 @@ exports[`Header has a valid snapshot 1`] = `
   <nav>
     <a
       href="#"
+      id="to-home"
       onClick={[Function]}
     >
       Home
     </a>
     <a
       href="#recipes"
+      id="to-recipes"
       onClick={[Function]}
     >
       All Recipes

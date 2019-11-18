@@ -9,7 +9,7 @@ export class SingleRecipe extends Component {
       index: this.props.initialIndex
     }
     this.nextRecipe = this.nextRecipe.bind(this)
-    this.previousRecipe = this.nextRecipe.bind(this)
+    this.previousRecipe = this.previousRecipe.bind(this)
   }
 
   render() {
@@ -27,7 +27,7 @@ export class SingleRecipe extends Component {
         )}
         </ul>
         <p dangerouslySetInnerHTML={{__html: body}}></p>
-        <button id="prev-recipe" onClick={this.previousRecipe}> Previous Recipe</button>
+        <button id="prev-recipe" onClick={this.previousRecipe}>Previous Recipe</button>
         <button id="next-recipe" onClick={this.nextRecipe}>Next Recipe</button>
       </>
     )

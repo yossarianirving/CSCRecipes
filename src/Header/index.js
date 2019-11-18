@@ -14,8 +14,8 @@ export class Header extends Component {
       <header>
         <h1>Recipes</h1>
         <nav>
-          <a href="#" onClick={this.navigate(openPage, 'home-page')} >Home</a>
-          <a href="#recipes" onClick={this.navigate(openPage, 'recipe-list')} >All Recipes</a>
+          <a id="to-home" href="#" onClick={this.navigate(openPage, 'home-page')} >Home</a>
+          <a id="to-recipes" href="#recipes" onClick={this.navigate(openPage, 'recipe-list')} >All Recipes</a>
         </nav>
     </header>
     )

@@ -65,7 +65,6 @@ class App extends Component {
     }
   }
   openRecipe(recipe_num) {
-    console.log(recipe_num);   
     this.setState({page: "single-recipe", recipe_num})
   }
   // opens a page (all recipes or home page)
