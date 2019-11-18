@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/yossarianirving/CSCRecipes.svg?branch=master)](https://travis-ci.com/yossarianirving/CSCRecipes)
+[![Build Status](https://travis-ci.com/yossarianirving/CSCRecipes.svg?branch=master)](https://travis-ci.com/yossarianirving/CSCRecipes)\
+[![Coverage Status](https://coveralls.io/repos/github/yossarianirving/CSCRecipes/badge.svg?branch=master)](https://coveralls.io/github/yossarianirving/CSCRecipes?branch=master)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
