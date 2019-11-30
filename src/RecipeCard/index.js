@@ -14,7 +14,7 @@ export class RecipeCard extends Component {
     let img = field_images.split(',').slice(-1)[0].trim();
     return(
       <div className="recipe-card">
-        <img src={`${BASE_URL}${img}`} className="recipe-card-img"></img>
+        <img src={`${BASE_URL}${img}`} className="recipe-card-img" alt={title}></img>
         <button className="recipe-card-title" onClick={this.openSingleRecipe(openRecipe)}>
           { title }
         </button>

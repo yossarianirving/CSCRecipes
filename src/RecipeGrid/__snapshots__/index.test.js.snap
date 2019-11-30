@@ -11,6 +11,7 @@ exports[`RecipeCard has a valid snapshot 1`] = `
       className="recipe-card"
     >
       <img
+        alt="Tomato and olive focaccia (TM)"
         className="recipe-card-img"
         src="http://gtest.dev.wwbtc.com/sites/default/files/styles/medium/public/2019-10/vigo%20the%20cat%20wallpaper.jpg?itok=C7xZGmBE"
       />
@@ -35,6 +36,7 @@ exports[`RecipeCard has a valid snapshot 1`] = `
       className="recipe-card"
     >
       <img
+        alt="Majorcan vegetable bake"
         className="recipe-card-img"
         src="http://gtest.dev.wwbtc.com/sites/default/files/styles/medium/public/2019-10/img_9212-683x1024.jpg?itok=yDqHlTFF"
       />

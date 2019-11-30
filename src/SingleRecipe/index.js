@@ -15,7 +15,7 @@ export class SingleRecipe extends Component {
   render() {
     let {results, index} = this.state
     let recipe = results[index]
-    let {title, field_images, field_ingredients, body} = recipe;
+    let {title, field_ingredients, body} = recipe;
     let ingredients = field_ingredients.split(',')
     return(
       <>
@@ -49,8 +49,8 @@ export class SingleRecipe extends Component {
 
   previousRecipe() {
     let {results, index} = this.state
-    if (results.length && index == 0) {
-      if (results.length != 0) {
+    if (results.length && index === 0) {
+      if (results.length !== 0) {
         index = results.length - 1
       }
     }

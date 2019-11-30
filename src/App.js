@@ -57,11 +57,14 @@ class App extends Component {
         window.location.hash = "recipes"
         return (<><RecipeGrid results={results} openRecipe={this.openRecipe}/></> );
       case "home-page":
-        window.location.hash = ""
+        window.location.hash = "home"
         return (<><HomePage/></>)
       case "single-recipe":
         window.location.hash = `recipes/${recipe_num}`
         return (<><SingleRecipe results={results} initialIndex={recipe_num}/></>)
+      default:
+        window.location.hash = "home"
+        return (<><HomePage/></>)
     }
   }
   openRecipe(recipe_num) {

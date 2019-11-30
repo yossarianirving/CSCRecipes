@@ -5,6 +5,7 @@ export class HomePage extends Component {
 
   constructor(props) {
     super(props);
+    this.getHomePage = this.getHomePage.bind(this)
   }
 
   render() {
@@ -12,5 +13,9 @@ export class HomePage extends Component {
     return(
       <div>Hello</div>
     )
+  }
+
+  getHomePage() {
+    
   }
 }
