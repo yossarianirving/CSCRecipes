@@ -22,7 +22,7 @@ export class SingleRecipe extends Component {
     return(
       <>
         <h2>{ title }</h2>
-        <img src={`${BASE_URL}${img}`}></img>
+        <img src={`${BASE_URL}${img}`} alt='recipe'></img>
         <h3>Ingredients</h3>
         <ul>
         { ingredients.map((ingredient, index) => 
