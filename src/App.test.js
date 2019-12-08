@@ -32,4 +32,12 @@ describe('App', () => {
     instance.openRecipe(0)
     expect(wrapper.state('page')).toEqual('single-recipe')
   })
+
+  it('navigates to home', () => {
+    fetch.mockResponseOnce(JSON.stringify(results))
+    const wrapper = shallow(<App />);
+    const instance = wrapper.instance()
+    instance.openPage('')
+    expect(wrapper.state('page')).toEqual('')
+  })
 })

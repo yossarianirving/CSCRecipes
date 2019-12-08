@@ -64,7 +64,7 @@ class App extends Component {
         return (<><SingleRecipe results={results} initialIndex={recipe_num}/></>)
       default:
         window.location.hash = "home"
-        return (<><HomePage/></>)
+        this.setState({ page: 'home-page'})
     }
   }
   openRecipe(recipe_num) {

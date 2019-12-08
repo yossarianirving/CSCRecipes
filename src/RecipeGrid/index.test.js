@@ -17,5 +17,13 @@ describe('RecipeCard', () => {
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-    });
+  });
+
+  test('results are null', () => {
+    const noResults = null
+    const component = shallow(
+      <RecipeGrid results={noResults}/>
+    );
+    expect(component.find('h1').html()).toEqual('<h1>Loading</h1>')
+  });
 })
