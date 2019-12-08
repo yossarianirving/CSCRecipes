@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/CSCRecipes/static/css/main.b10f0747.chunk.css",
-    "main.js": "/CSCRecipes/static/js/main.b277f0a9.chunk.js",
-    "main.js.map": "/CSCRecipes/static/js/main.b277f0a9.chunk.js.map",
+    "main.css": "/CSCRecipes/static/css/main.a7723ff1.chunk.css",
+    "main.js": "/CSCRecipes/static/js/main.91d124d0.chunk.js",
+    "main.js.map": "/CSCRecipes/static/js/main.91d124d0.chunk.js.map",
     "runtime-main.js": "/CSCRecipes/static/js/runtime-main.12494854.js",
     "runtime-main.js.map": "/CSCRecipes/static/js/runtime-main.12494854.js.map",
     "static/js/2.c550971c.chunk.js": "/CSCRecipes/static/js/2.c550971c.chunk.js",
     "static/js/2.c550971c.chunk.js.map": "/CSCRecipes/static/js/2.c550971c.chunk.js.map",
     "index.html": "/CSCRecipes/index.html",
-    "precache-manifest.2a840c8a74ae86e3aaf2e4b48340d022.js": "/CSCRecipes/precache-manifest.2a840c8a74ae86e3aaf2e4b48340d022.js",
+    "precache-manifest.0a69dd420e4046c79446d03a9cd5813a.js": "/CSCRecipes/precache-manifest.0a69dd420e4046c79446d03a9cd5813a.js",
     "service-worker.js": "/CSCRecipes/service-worker.js",
-    "static/css/main.b10f0747.chunk.css.map": "/CSCRecipes/static/css/main.b10f0747.chunk.css.map"
+    "static/css/main.a7723ff1.chunk.css.map": "/CSCRecipes/static/css/main.a7723ff1.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.12494854.js",
     "static/js/2.c550971c.chunk.js",
-    "static/css/main.b10f0747.chunk.css",
-    "static/js/main.b277f0a9.chunk.js"
+    "static/css/main.a7723ff1.chunk.css",
+    "static/js/main.91d124d0.chunk.js"
   ]
 }
