@@ -12,6 +12,8 @@
   display: flex;
   flex: 0 0 33.33333%;
   max-width: 33.333333%;
+  min-width: 275px;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 15px;
 }

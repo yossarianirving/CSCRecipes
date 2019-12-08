@@ -29,10 +29,10 @@ class App extends Component {
 
   render() {
     return (
-      <>
-      <Header openPage={this.openPage}></Header>
-      { this.getBody() }
-      </>
+      <div className="App">
+        <Header openPage={this.openPage}></Header>
+        { this.getBody() }
+      </div>
     )
     
 

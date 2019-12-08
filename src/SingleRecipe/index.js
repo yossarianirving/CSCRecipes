@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BASE_URL } from '../constants';
 import './index.css'
 
 export class SingleRecipe extends Component {
@@ -15,11 +16,13 @@ export class SingleRecipe extends Component {
   render() {
     let {results, index} = this.state
     let recipe = results[index]
-    let {title, field_ingredients, body} = recipe;
+    let {title, field_ingredients, body, field_images} = recipe;
+    let img = field_images.split(',').slice(-1)[0].trim();
     let ingredients = field_ingredients.split(',')
     return(
       <>
         <h2>{ title }</h2>
+        <img src={`${BASE_URL}${img}`}></img>
         <h3>Ingredients</h3>
         <ul>
         { ingredients.map((ingredient, index) => 

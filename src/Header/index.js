@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import './index.css'
 
 export class Header extends Component {
 
@@ -17,7 +17,7 @@ export class Header extends Component {
           <a id="to-home" href="#home" onClick={this.navigate(openPage, 'home-page')} >Home</a>
           <a id="to-recipes" href="#recipes" onClick={this.navigate(openPage, 'recipe-list')} >All Recipes</a>
         </nav>
-    </header>
+      </header>
     )
   }
 
